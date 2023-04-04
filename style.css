@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: darkslateblue;
+    font-size: 24px;
+  }
+  
+  img {
+    width: 100%;
+  }
+
+section{
+    display: flex;
+}
+    section div:nth-child(1){
+        flex: 40%;
+    }
+
+    section div:nth-child(2){
+        flex: 60%;
+    }
