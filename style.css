@@ -3,6 +3,8 @@
   }
   
   body {
+    width: 80%;
+    margin: auto;
     color: darkslateblue;
     font-size: 24px;
   }

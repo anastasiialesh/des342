@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narrative</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Disneyland Story</h1>
+    <div id="scene-one" class="scene">
+        <img src="images/disney-1.png" alt="">
+    </div>
+    <div id="scene-two" class="scene hide">
+        <img src="images/disney-2.png" alt="">
+    </div>
+    <div id="scene-three" class="scene hide">
+        <img src="images/disney-3.png" alt="">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        //$(this).click(function(){
+         //   $('.scene').addClass('hide')
+        //    $('scene').not(this).removeClass('hide')
+       // })
+       $('#scene-one').click(function(){
+            $('#scene-one').toggleClass('hide')
+            $('#scene-two').toggleClass('hide')
+        })
+        $('#scene-two').click(function(){
+            $('#scene-two').toggleClass('hide')
+            $('#scene-three').toggleClass('hide')
+        })
+        $('#scene-three').click(function(){
+            $('#scene-three').toggleClass('hide')
+            $('#scene-one').toggleClass('hide')
+        })
+    </script>
+</body>
+</html>
