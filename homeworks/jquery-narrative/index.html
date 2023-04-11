@@ -18,6 +18,18 @@
     <div id="scene-three" class="scene hide">
         <img src="images/disney-3.png" alt="">
     </div>
+    <div id="scene-four" class="scene hide">
+        <img src="images/disney-4.png" alt="">
+    </div>
+    <div id="scene-five" class="scene hide">
+        <img src="images/disney-5.png" alt="">
+    </div>
+    <div id="scene-six" class="scene hide">
+        <img src="images/disney-6.png" alt="">
+    </div>
+    <div id="scene-seven" class="scene hide">
+        <img src="images/disney-7.png" alt="">
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script>
         //$(this).click(function(){
@@ -33,6 +45,22 @@
             $('#scene-three').toggleClass('hide')
         })
         $('#scene-three').click(function(){
+            $('#scene-three').toggleClass('hide')
+            $('#scene-four').toggleClass('hide')
+        })
+        $('#scene-four').click(function(){
+            $('#scene-four').toggleClass('hide')
+            $('#scene-five').toggleClass('hide')
+        })
+        $('#scene-five').click(function(){
+            $('#scene-five').toggleClass('hide')
+            $('#scene-six').toggleClass('hide')
+        })
+        $('#scene-six').click(function(){
+            $('#scene-six').toggleClass('hide')
+            $('#scene-seven').toggleClass('hide')
+        })
+        $('#scene-seven').click(function(){
             $('#scene-three').toggleClass('hide')
             $('#scene-one').toggleClass('hide')
         })
