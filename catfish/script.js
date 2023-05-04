@@ -1,5 +1,6 @@
-$('#page-3').click(function(){
-    $('#page-3').toggleClass('hide')
+$('#text-3-b').click(function(){
+    $('#text-3-a').toggleClass('hide')
+    $('#text-3-b').toggleClass('hide')
     $('#text-4-a').toggleClass('hide')
 })
 

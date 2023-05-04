@@ -180,3 +180,18 @@ section {
         .text-3-b{
             margin-right: 10%;
         }
+
+.story-page .page-4 .text-4-a, .text-4-b, .text-4-c{
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    background:rgba(255, 255, 255, .9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    .text-4-a{
+        width: 80%;
+    }
+    .text-4-b, .text-4-c{
+        width: 30%;
+    }
