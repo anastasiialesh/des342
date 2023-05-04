@@ -80,6 +80,8 @@ section {
 }
 
 
+/*HOME PAGE*/
+
 .home-page{
     width: 100vw;
     margin: auto;
@@ -113,6 +115,10 @@ section {
     margin-top: 3%;
   }
 
+
+
+
+  /*STORY PAGE*/
 
 .story-page .page-1{
     display: flex;
@@ -181,7 +187,7 @@ section {
             margin-right: 10%;
         }
 
-.story-page .page-4 .text-4-a, .text-4-b, .text-4-c{
+.story-page .text-4-a, .text-4-b, .text-4-c{
     margin: auto;
     padding: 20px;
     border-radius: 10px;
@@ -195,3 +201,31 @@ section {
     .text-4-b, .text-4-c{
         width: 30%;
     }
+
+.story-page .page-5-a{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        margin: auto;
+        background-image: url(images/river_people.png);
+    } 
+
+        .text-5-a, text-5-b{
+            margin: auto;
+            width: 65%;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            background:rgba(255, 255, 255, .9);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+    .story-page .page-5-b{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        margin: auto;
+        background-image: url(images/river_people.png);
+        }
