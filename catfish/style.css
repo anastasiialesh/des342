@@ -67,7 +67,7 @@ button:hover {
 #wrap {
   position: relative;
   overflow: hidden;
-  height: 16000vh;
+  height: 1600vh;
 }
 section {
   box-sizing: border-box;
@@ -144,6 +144,10 @@ section {
 .home-page button {
   margin-top: 3%;
 }
+section > div {
+  background-size: cover;
+  background-position: center;
+}
 
 /*STORY PAGE*/
 
@@ -156,7 +160,7 @@ nav a{
     justify-content: space-between;
   }
 
-.story-page nav {
+ nav {
   background-color: rgba(255, 255, 255, 0.3);
   padding: 20px;
   width: 100vw;
@@ -166,6 +170,7 @@ nav a{
   right: 0;
   z-index: 998;
 }
+
 .story-page .page-1 {
   display: flex;
   justify-content: center;
@@ -666,4 +671,60 @@ nav a{
 }
     .text-16{
       margin-top: 15%;
+    }
+
+/* ABOUT PAGE */
+
+.about-page .one{
+  background-color: #E4ECFB;
+}
+.about-page .page-1{
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  margin-top: 8%;
+  }
+
+  .page-1 .left{
+    flex: 1;
+    border-radius: 20%;
+  }
+    
+  .page-1 .right{
+    flex: 2;
+    padding-top: 0;
+  }
+      .page-1 .right h2{
+        margin: 0;
+      }
+      .page-1 .right h3{
+        font-family: KyivTypeSans;
+        font-size: 24px;
+      }
+
+.about-page .two{
+  background-color: #D8EACB;
+  overflow: visible;
+}
+.about-page .page-2{
+  background-color: #D8EACB;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  margin-top: 5%;
+  padding-bottom: 40px;
+  }
+
+  .page-2 .left, .right{
+    flex: 1;
+  }
+    .page-2 .right {
+      border-radius: 20%;
+      padding-top: 0;
+
+    }
+    .page-2 .left p {
+      margin-top: 0;
     }
