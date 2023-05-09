@@ -67,7 +67,7 @@ button:hover {
 #wrap {
   position: relative;
   overflow: hidden;
-  height: 400vh;
+  height: 16000vh;
 }
 section {
   box-sizing: border-box;
@@ -601,6 +601,9 @@ nav a{
     .text-13-b{
       width: 45%;
       margin-right: 10%;
+    }
+    .text-13-c{
+      width: 45%;
     }
 
 .story-page .page-14{
