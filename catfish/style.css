@@ -683,7 +683,7 @@ nav a{
   height: 100vh;
   margin: auto;
   display: flex;
-  margin-top: 8%;
+  padding-top: 8%;
   }
 
   .page-1 .left{
@@ -705,15 +705,16 @@ nav a{
 
 .about-page .two{
   background-color: #D8EACB;
+  height: auto;
   overflow: visible;
 }
 .about-page .page-2{
   background-color: #D8EACB;
   width: 80%;
-  height: 100vh;
+  height: auto;
   margin: auto;
   display: flex;
-  margin-top: 5%;
+  padding-top: 5%;
   padding-bottom: 40px;
   }
 
