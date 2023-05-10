@@ -106,16 +106,16 @@ document.addEventListener('DOMContentLoaded', function () {
         $('#text-3-a').addClass('hide')
         $('#text-3-b').addClass('hide')
         $('#text-4-a').removeClass('hide')
-      }, '4000')
-      setTimeout(() => {
-        $('#text-4-b').removeClass('hide')
       }, '6000')
       setTimeout(() => {
-        $('#text-4-b-2').removeClass('hide')
+        $('#text-4-b').removeClass('hide')
       }, '8000')
       setTimeout(() => {
-        $('#text-4-c').removeClass('hide')
+        $('#text-4-b-2').removeClass('hide')
       }, '10000')
+      setTimeout(() => {
+        $('#text-4-c').removeClass('hide')
+      }, '12000')
     }
     console.log('Slide ' + (e.target.currentSlide + 1) + ' of ' + e.target.slides.length)
   }
@@ -126,3 +126,74 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   })
 })
+
+$('#text-3-b').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+$('#text-4-a').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+$('#text-4-b').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+$('#text-4-b-2').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+$('#text-4-d').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+$('#text-4-e').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+$('#text-5-a').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+$('#text-5-b').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+$('#text-5-c').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+
+$('#text-10-a').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+$('#text-10-b').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+$('#text-10-c').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+$('#text-10-d').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+
+
+$('#text-11-a').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+$('#text-11-b').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+$('#text-11-c').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+
+
+$('#text-12-a').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+$('#text-12-b').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+$('#text-12-c').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+
+
+$('#text-13-a').click(function() {
+  $(this).toggleClass('pulse'); 
+});
+$('#text-13-b').click(function() {
+  $(this).toggleClass('pulse'); 
+});
