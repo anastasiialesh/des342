@@ -51,9 +51,8 @@ p {
   cursor: pointer;
 }
 .day{
-  position: fixed;
-  right: 30px;
-  bottom: 8px;
+  padding: 0;
+  text-align: center;
   z-index: 300;
 }
 
@@ -139,6 +138,7 @@ section > div {
 /*STORY PAGE*/
 
 nav a{
+  padding: 10px;
   text-decoration: none;
   color: #0D2759;
 }
