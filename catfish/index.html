@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="home-page">
+    <div class="player">
+        <img src="images/sound.png" alt="sound on" id="icon">
+    </div>
     <div class="title">
             <h1>The Catfish</h1>
             <h2>Ostap Vyshnya</h2>
@@ -15,6 +18,13 @@
     <div class="read">
         <button class="button" onclick="location.href='story.html'">Start Reading</button>
     </div>
-        
+    
+<audio id="hSong" autoplay>
+    <source src="media/river_1.mp3" type="audio/mp3"></source>
+</audio>
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>
