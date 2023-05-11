@@ -85,18 +85,26 @@ button:hover {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
+  background-color: rgb(89, 116, 222);
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  padding: 1px 12px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
 }
-
+#myBtn img{
+  padding-top: 10px;
+}
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: rgb(249, 143, 13); /* Add a dark-grey background on hover */
 }
 
+.animate {
+  transform: translateY(+100px);
+}
+.up {
+  transform: translateY(0);
+  transition: transform ease 1s;
+}
 
 
 .hide {
@@ -285,7 +293,7 @@ nav a{
   }
   .text-4-a {
     width: 80%;
-    margin-top: 6%;
+    margin-top: 7%;
     margin-bottom: 25%;
   }
   .text-4-b, .text-4-b-2,
@@ -359,7 +367,7 @@ nav a{
   .text-5-a {
     width: 70%;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 7%;
     padding: 10px;
     border-radius: 10px;
     position: relative;
@@ -522,7 +530,7 @@ nav a{
       margin-right: 8%;
     }
       .text-10-a{
-        margin-top: 5%;
+        margin-top: 7%;
       }
       .text-10-b, .text-10-c, .text-10-d, .text-10-e{
         margin-top: -5%;
@@ -581,7 +589,7 @@ nav a{
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .text-12-a{
-      margin-top: 4%;
+      margin-top: 7%;
       width: 80%;
     }
     .text-12-b, .text-12-d{

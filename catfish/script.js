@@ -198,7 +198,6 @@ function myFunction() {
 }
 
 
-
 // Get the button:
 let mybutton = document.getElementById("myBtn");
 
@@ -218,3 +217,27 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+
+let timer = 0
+window.addEventListener('load', event => {
+  let intersectionObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        setTimeout(function () {
+          entry.target.classList.add('up')
+        }, timer)
+        timer += 50
+        intersectionObserver.unobserve(entry.target)
+        setTimeout(function () {
+          timer = 0
+        }, 1000)
+      }
+    })
+  })
+
+  document.querySelectorAll('.animate').forEach(obj => {
+    intersectionObserver.observe(obj)
+  })
+})
