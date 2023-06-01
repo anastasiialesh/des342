@@ -35,6 +35,7 @@ h1{
     font-family: 'Hunter', serif;
     font-size: 180px;
     color: #353535;
+    font-weight: 200;
 }
 
 h2{
@@ -118,3 +119,17 @@ p{
     margin: auto;
     margin-top: -15%;
   }
+  .one .element{
+    position: relative;
+    scale: .1;
+    margin-top: -16%;
+    margin-left: 55%;
+    animation: spinnow 5s infinite linear;
+  }
+
+  @keyframes spinnow {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
