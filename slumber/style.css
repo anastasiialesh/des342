@@ -1,0 +1,102 @@
+@font-face {
+  font-family: Hunter;
+  src: url(fonts/Hunter.otf);
+}
+@font-face {
+    font-family: KurkaLapoyu;
+    src: url(fonts/KurkaLapoyu-Regular.otf);
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/*Colors
+purple: #D3B3F7
+lilac: #F2ECFA
+pink: #F7D5DA
+green: #B2C535
+orange: #F8C747
+creme: #F8F1D4
+blue: #D6E8FF
+black: #353535
+*/
+
+h1{
+    font-family: 'Hunter', serif;
+    font-size: 180px;
+    color: #353535;
+}
+
+h2{
+    font-family: 'KurkaLapoyu-Regular', sans-serif;
+}
+
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #353535;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+  }
+  .content {
+    width: 80%;
+    margin: 80px auto;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+  }
+  .one,
+  .two,
+  .three,
+  .four {
+    width: 100vw;
+  }
+  .one {
+    background: #F2ECFA;
+  }
+  .two {
+    background: rgb(185, 229, 241);
+  }
+  .three {
+    background: rgb(198, 251, 190);
+  }
+  .four {
+    background: rgb(246, 190, 251);
+  }
+  
+  .outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .kitty {
+    width: 40%;
+    margin: auto;
+  }
