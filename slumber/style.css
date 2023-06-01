@@ -56,6 +56,7 @@ p{
     height: 100vh;
   }
   .content {
+    position: relative;
     width: 80%;
     margin: 80px auto;
   }
@@ -115,15 +116,16 @@ p{
     margin: 3%;
   }
   .slumber {
-    width: 50%;
+    height: 65vh;
+    width: auto;
     margin: auto;
-    margin-top: -15%;
+    margin-top: -10%;
   }
   .one .element{
-    position: relative;
+    position: absolute;
     scale: .1;
-    margin-top: -16%;
-    margin-left: 55%;
+    top: 0;
+    right: -50%;
     animation: spinnow 5s infinite linear;
   }
 
