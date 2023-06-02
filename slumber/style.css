@@ -40,16 +40,35 @@ h1{
 
 h2{
     font-family: 'KurkaLapoyu-Regular', sans-serif;
-    font-size: 65px;
+    font-size: 60px;
     color: #353535;
 }
 
+h3{
+  font-family: 'Hunter', serif;
+  font-size: 60px;
+  color: #353535;
+  font-weight: 200;
+}
 
 p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     color: #353535;
 }
+
+
+.element{
+  animation: spinnow 5s infinite linear;
+}
+
+@keyframes spinnow {
+  100% {
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+  }
+}
+
 
 .page {
     width: 100vw;
@@ -76,9 +95,7 @@ p{
   .one {
     background: #F2ECFA;
   }
-  .two {
-    background: rgb(185, 229, 241);
-  }
+
   .three {
     background: rgb(198, 251, 190);
   }
@@ -101,37 +118,99 @@ p{
     display: none;
   }
 
+
+  /*HOME PAGE*/
+
+
   .one .main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-bottom: 10%;
+    margin-top: -2%;
   }
   .main h1{
     margin: 0;
     z-index: 10;
   }
   .main h2{
-    margin: 3%;
+    margin: 0;
   }
   .slumber {
-    height: 65vh;
+    height: 55vh;
     width: auto;
     margin: auto;
     margin-top: -10%;
   }
-  .one .element{
+
+  .one .star-1{
     position: absolute;
-    scale: .1;
-    top: 0;
-    right: -50%;
-    animation: spinnow 5s infinite linear;
+      top: -30%;
+      right: -48%;
+      scale: .09;
+  }
+  .one .star-2{
+    position: absolute;
+    top: -15%;
+    left: -44%;
+    scale: .2;
+}
+  .one .star-3{
+    position: absolute;
+    top: 5%;
+    right: -35%;
+    scale: .2;
+  }
+  .one .star-4{
+    position: absolute;
+    top: -55%;
+    right: -26%;
+    scale: .05;
+  }
+  .one .star-5{
+    position: absolute;
+    top: -75%;
+    right: 43%;
+    scale: .2;
+  }
+  .one .star-6{
+    position: absolute;
+    top: -63%;
+    left: 45%;
+    scale: .16;
+  }
+  .one .star-7{
+    position: absolute;
+    top: -95%;
+    scale: .04;
+  }
+  .one .star-8{
+    position: absolute;
+    top: 5%;
+    right: 23%;
+    scale: .04;
+  }
+  .one .star-9{
+    position: absolute;
+    top: -30%;
+    right: 23%;
+    scale: .05;
+  }
+  .one .star-10{
+    position: absolute;
+    top: -43%;
+    right: 46%;
+    scale: .04;
   }
 
-  @keyframes spinnow {
-    100% {
-        transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-    }
-}
+  /* ABOUT PAGE*/
+
+  .two h3{
+    text-align: center;
+  }
+  .two .about{
+    display: flex;
+  }
+  .about .left, .right{
+    flex: 1;
+  }
