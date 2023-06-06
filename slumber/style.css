@@ -47,7 +47,7 @@ h2{
 
 h3{
   font-family: 'Hunter', serif;
-  font-size: 60px;
+  font-size: 45px;
   color: #353535;
   font-weight: 200;
   text-align: center;
@@ -61,7 +61,7 @@ h4{
 
 p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     color: #353535;
 }
 
@@ -100,14 +100,11 @@ p{
   .four {
     width: 100vw;
   }
-  .one, .three {
+  .one, .three, .four {
     background: #F2ECFA;
   }
 
-  .four {
-    background: rgb(246, 190, 251);
-  }
-  
+
   .outer-wrapper {
     width: 100vh;
     height: 100vw;
@@ -233,6 +230,26 @@ p{
     margin-top: -10%;
   }
 
+  .two .star-1{
+    position: absolute;
+    scale: .1;
+    top: -80%;
+    right: -50%;
+  }
+
+  .two .star-2{
+    position: absolute;
+    scale: .1;
+    top: -60%;
+    right: 50%;
+  }
+
+  .two .star-3{
+    position: absolute;
+    scale: .06;
+    right: 5%;
+  }
+
   /* Materials Page 1*/
 
 .three .materials{
@@ -260,7 +277,7 @@ p{
     text-align: center;
     padding: 5px 15px;
     margin: auto;
-    margin-top: -6%;
+    margin-top: -2%;
     width: 40%;
     background-color: #F7D5DA;
     border-radius: 10px;
@@ -274,4 +291,41 @@ p{
 
   .dragging {
     opacity: 0.5;
+  }
+
+  /* Materials Page 2*/
+
+  .materials-info{
+    display: flex;
+    margin-left: -10%;
+  }
+  .materials-info .left{
+    flex: 60%;
+  }
+  .materials-info .right{
+    flex: 40%;
+    margin-top: 5%;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 1px solid #353535;
+    height: fit-content;
+  }
+
+  /*Gallery Page*/
+
+  .background{
+    position: absolute;
+    z-index: -99;
+  }
+  .bg-1{
+    left: -7%;
+  }
+  .bg-2{
+    right: 43%;
+    top: 15%;
+  }
+  .gallery img{
+    height: 80vh;
+    width: auto;
+    margin: auto;
   }

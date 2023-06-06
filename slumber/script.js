@@ -56,3 +56,15 @@ let dragged
           window.location = url
         }
       })
+
+
+      $(document).ready(function () {
+        $('.gallery').slick({
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          adaptiveHeight: true,
+          autoplay: true,
+          autoplaySpeed: 2000
+        })
+      })
