@@ -14,6 +14,7 @@
 body {
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
 img {
@@ -49,6 +50,13 @@ h3{
   font-size: 60px;
   color: #353535;
   font-weight: 200;
+  text-align: center;
+}
+
+h4{
+  font-family: 'KurkaLapoyu-Regular', sans-serif;
+  font-size: 22px;
+  color: #353535;
 }
 
 p{
@@ -77,7 +85,7 @@ p{
   .content {
     position: relative;
     width: 80%;
-    margin: 80px auto;
+    margin: auto;
   }
   .wrapper {
     display: flex;
@@ -92,13 +100,10 @@ p{
   .four {
     width: 100vw;
   }
-  .one {
+  .one, .three {
     background: #F2ECFA;
   }
 
-  .three {
-    background: rgb(198, 251, 190);
-  }
   .four {
     background: rgb(246, 190, 251);
   }
@@ -127,7 +132,7 @@ p{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: -2%;
+    margin-top: 3%;
   }
   .main h1{
     margin: 0;
@@ -145,19 +150,19 @@ p{
 
   .one .star-1{
     position: absolute;
-      top: -30%;
+      top: -20%;
       right: -48%;
       scale: .09;
   }
   .one .star-2{
     position: absolute;
-    top: -15%;
+    top: -8%;
     left: -44%;
     scale: .2;
 }
   .one .star-3{
     position: absolute;
-    top: 5%;
+    top: 10%;
     right: -35%;
     scale: .2;
   }
@@ -169,41 +174,43 @@ p{
   }
   .one .star-5{
     position: absolute;
-    top: -75%;
-    right: 43%;
+    top: -65%;
+    right: 48%;
     scale: .2;
   }
   .one .star-6{
     position: absolute;
     top: -63%;
-    left: 45%;
+    left: 48%;
     scale: .16;
   }
   .one .star-7{
     position: absolute;
-    top: -95%;
+    top: -90%;
     scale: .04;
   }
   .one .star-8{
     position: absolute;
-    top: 5%;
+    top: 10%;
     right: 23%;
     scale: .04;
   }
   .one .star-9{
     position: absolute;
-    top: -30%;
-    right: 23%;
+    top: -20%;
+    right: 28%;
     scale: .05;
   }
   .one .star-10{
     position: absolute;
-    top: -43%;
+    top: -33%;
     right: 46%;
     scale: .04;
   }
 
   /* ABOUT PAGE*/
+
+ 
 
   .two h3{
     text-align: center;
@@ -213,4 +220,58 @@ p{
   }
   .about .left, .right{
     flex: 1;
+  }
+  .about .left{
+    margin-top: 4%;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 1px solid #353535;
+    height: fit-content;
+  }
+
+  .about .right{
+    margin-top: -10%;
+  }
+
+  /* Materials Page 1*/
+
+.three .materials{
+  display: flex;
+  justify-content: space-between;
+}
+
+.three .knee, .stuffing, .tights{
+  display: block;
+  text-align: center;
+}
+.materials img{
+  margin-top: -25%;
+  height: 55vh;
+  width: auto;
+}
+.three .tights img{
+  margin-top: 2%;
+}
+.three .stuffing img{
+  margin-top: -12%;
+  scale: 1.2;
+}
+.three .dropzone{
+    text-align: center;
+    padding: 5px 15px;
+    margin: auto;
+    margin-top: -6%;
+    width: 40%;
+    background-color: #F7D5DA;
+    border-radius: 10px;
+    border: 1px solid #353535;
+    box-shadow: 0 4px 8px 0  #F7D5DA, 0 6px 20px 0#F7D5DA;
+}
+
+  .dropzone.dragover{
+    background-color: #D3B3F7;
+  }
+
+  .dragging {
+    opacity: 0.5;
   }

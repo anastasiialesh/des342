@@ -1,4 +1,47 @@
-let dragged
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag n drop</title>
+    <style>
+      body {
+        /* Prevent the user selecting text in the example */
+        user-select: none;
+      }
+
+      #draggable {
+        text-align: center;
+        background: white;
+        border: 2px solid red;
+      }
+
+      .dropzone {
+        width: 200px;
+        height: 200px;
+        background: blueviolet;
+        margin: 10px;
+        padding: 10px;
+      }
+
+      .dropzone.dragover {
+        background-color: purple;
+      }
+
+      .dragging {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropzone">
+      <div id="draggable" draggable="true">This div is draggable</div>
+    </div>
+    <div class="dropzone" id="droptarget">dropzone</div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+      let dragged
 
       /* events fired on the draggable target */
       const source = document.getElementById('draggable')
@@ -56,3 +99,6 @@ let dragged
           window.location = url
         }
       })
+    </script>
+  </body>
+</html>
