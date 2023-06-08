@@ -45,7 +45,7 @@ let dragged
       })
 
       target.addEventListener('drop', event => {
-        let url = 'dropped.html'
+        let url = '#p4'
         // prevent default action (open as link for some elements)
         event.preventDefault()
         // move dragged element to the selected drop target
@@ -68,3 +68,53 @@ let dragged
           autoplaySpeed: 2000
         })
       })
+
+
+
+      ;('use strict')
+
+function toggleIcon() {
+  $('.icon').on('click', function () {
+    $('.icon').toggleClass('active')
+    $('.menu-mobile').slideToggle(300)
+  })
+}
+
+function closeMobileMenu() {
+  $('.menu-mobile').on('click', 'a', function () {
+    $('.icon').trigger('click')
+  })
+}
+
+//when the page loads call toggleIcon;
+$(toggleIcon)
+$(closeMobileMenu)
+
+
+$('#s-purple').click(function () {
+    $('#r-yellow').addClass('hide')
+    $('#r-blue').addClass('hide')
+    $('#r-green').addClass('hide')
+    $('#r-purple').removeClass('hide')
+  })
+
+  $('#s-yellow').click(function () {
+    $('#r-purple').addClass('hide')
+    $('#r-blue').addClass('hide')
+    $('#r-green').addClass('hide')
+    $('#r-yellow').removeClass('hide')
+  })
+
+  $('#s-blue').click(function () {
+    $('#r-yellow').addClass('hide')
+    $('#r-purple').addClass('hide')
+    $('#r-green').addClass('hide')
+    $('#r-blue').removeClass('hide')
+  })
+
+  $('#s-green').click(function () {
+    $('#r-yellow').addClass('hide')
+    $('#r-blue').addClass('hide')
+    $('#r-purple').addClass('hide')
+    $('#r-green').removeClass('hide')
+  })
