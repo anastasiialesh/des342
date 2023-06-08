@@ -555,7 +555,7 @@ header{
     width: auto;
   }
 
-  .faces img:hover{
+  .faces div:hover{
     scale: 1.2;
   }
 
