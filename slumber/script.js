@@ -118,3 +118,36 @@ $('#s-purple').click(function () {
     $('#r-purple').addClass('hide')
     $('#r-green').removeClass('hide')
   })
+
+
+  let timer = 0
+window.addEventListener('load', event => {
+  let intersectionObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        setTimeout(function () {
+          entry.target.classList.add('up')
+        }, timer)
+        timer += 50
+        intersectionObserver.unobserve(entry.target)
+        setTimeout(function () {
+          timer = 0
+        }, 1000)
+      }
+    })
+  })
+
+  document.querySelectorAll('.animate').forEach(obj => {
+    intersectionObserver.observe(obj)
+  })
+})
+
+
+$('.name').click(function () {
+  $('form').toggleClass('hide')
+  $('.faces').toggleClass('hide')
+})
+$('.face').click(function () {
+  $('.faces').toggleClass('hide')
+  $('form').toggleClass('hide')
+})
