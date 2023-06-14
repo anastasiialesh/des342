@@ -151,3 +151,7 @@ $('.face').click(function () {
   $('.faces').toggleClass('hide')
   $('form').toggleClass('hide')
 })
+
+
+new CircleType(document.getElementById('round-text'));
+$(round-text.element).fitText();
