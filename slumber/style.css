@@ -855,7 +855,11 @@ button:hover{
   flex-direction: column;
 }
  .three .dropzone{
-  width: 60%;
+  display: none;
+ }
+
+ .three .m-star{
+  display: none;
  }
 
 /*Materials Page 2*/
@@ -906,4 +910,21 @@ button{
 #round-text{
   display: none;
 }
+}
+
+/*Large devices*/
+
+@media only screen and (min-width: 1920px) {
+
+body{
+  background-color: #D3B3F7;
+}
+ .about .star-2{
+  top: -20%;
+ }
+
+
+
+
+
 }
