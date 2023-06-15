@@ -51,7 +51,7 @@ let dragged
         // move dragged element to the selected drop target
         if (event.target.classList.contains('dropzone')) {
           event.target.classList.remove('dragover')
-          event.target.appendChild(dragged)
+  
           //alert('dropped')
           window.location = url
         }
