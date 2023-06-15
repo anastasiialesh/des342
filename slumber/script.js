@@ -155,3 +155,4 @@ $('.face').click(function () {
 
 new CircleType(document.getElementById('round-text'));
 $(round-text.element).fitText();
+

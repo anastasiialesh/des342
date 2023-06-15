@@ -853,6 +853,7 @@ button:hover{
 
 .three .materials{
   flex-direction: column;
+  margin-top: 40%;
 }
  .three .dropzone{
   display: none;
@@ -861,6 +862,24 @@ button:hover{
  .three .m-star{
   display: none;
  }
+
+ .three .tights{
+  margin-right: -45%;
+}
+.three .stuffing{
+  margin-right: -24%;
+}
+.three .knee{
+  margin-left: -35%;
+}
+
+.three .knee h4{
+
+}
+
+
+
+
 
 /*Materials Page 2*/
 
@@ -875,8 +894,19 @@ button:hover{
 }
 /*Gallery*/
 .five .background{
-  margin-top: 0;
+  margin-top: 1%;
+  scale: 1.2;
 }
+
+.five .background img{
+  margin-top: 15%;
+}
+
+.gallery img{
+  height: 70vh;
+}
+
+
 /*Workshop*/
 .six .container{
   flex-direction: column;
@@ -888,6 +918,8 @@ button:hover{
 }
 .container .info{
   margin-left: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .options{
@@ -895,12 +927,12 @@ button:hover{
 }
  .faces{
   width: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 5%;
 }
 form{
   text-align: center;
-  margin-top: 5%;
   margin-bottom: 5%;
 }
 button{
@@ -912,9 +944,12 @@ button{
 }
 }
 
+
+
+
 /*Large devices*/
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1500px) {
 
 body{
   background-color: #D3B3F7;
