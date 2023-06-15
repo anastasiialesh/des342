@@ -949,7 +949,7 @@ button{
 
 /*Large devices*/
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1450px) {
 
 body{
   background-color: #D3B3F7;
