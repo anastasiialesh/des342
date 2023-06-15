@@ -147,7 +147,6 @@ p{
   .logo{
     position: absolute;
     margin-left: -4%;
-
     scale: .3;
   }
 header{
@@ -261,7 +260,7 @@ button:hover{
       width: 40px;
       height: 4px;
       line-height: 70px;
-      background: #353535;
+      background: #D3B3F7;
       border-radius: 5px;
       position: absolute;
       top: 50%;
@@ -276,7 +275,7 @@ button:hover{
       position: absolute;
       width: 40px;
       height: 4px;
-      background: #353535;
+      background: #D3B3F7;
       border-radius: 5px;
       transition: 0.5s;
     }
@@ -758,4 +757,153 @@ button:hover{
       height: auto;
       padding-bottom: 50px;
     }
+
+
+    h1{
+      font-family: 'Hunter', serif;
+      font-size: 80px;
+      color: #353535;
+      font-weight: 200;
+    }
+  
+  h2{
+      font-family: 'KurkaLapoyu-Regular', sans-serif;
+      font-size: 36px;
+      color: #353535;
+    }
+  
+  h3{
+    font-family: 'Hunter', serif;
+    font-size: 42px;
+    color: #353535;
+    font-weight: 200;
+    text-align: center;
   }
+  
+  h4{
+    font-family: 'KurkaLapoyu-Regular', sans-serif;
+    font-size: 15px;
+    color: #353535;
+  }
+  
+  p{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      color: #353535;
+  }
+
+
+  /*stars*/
+
+  .one .star-3{
+    top: 60%;
+    left: 40%;
+  }
+
+  .one .star-4{
+    top: 27%;
+    left: 45%;
+    scale: .07;
+  }
+
+  .one .star-7{
+    top: 100%;
+    left: 45%;
+    z-index: 2;
+    scale: .08;
+  }
+
+  .one .star-8{
+    top: 95%;
+    right: 40%;
+    scale: .09;
+  }
+
+  .one .star-10{
+    top: 60%;
+  }
+  
+
+  .two .star-3{
+    top: 100%;
+    scale: .08;
+  }
+
+
+
+  /* Home Page*/
+
+  .logo img{
+    margin-left: -50%;
+  }
+
+  .main h1{
+    margin-top: 15%;
+  }
+
+  
+
+/*About Page*/
+
+.two .about{
+  flex-direction: column-reverse;
+}
+
+/*Materials Page 1*/
+
+.three .materials{
+  flex-direction: column;
+}
+ .three .dropzone{
+  width: 60%;
+ }
+
+/*Materials Page 2*/
+
+.four .materials-info{
+  flex-direction: column;
+  justify-content: center;
+}
+
+.four .right{
+  margin-left: 7%;
+
+}
+/*Gallery*/
+.five .background{
+  margin-top: 0;
+}
+/*Workshop*/
+.six .container{
+  flex-direction: column;
+  align-items: center;
+}
+.container .result img{
+  height: 60vh;
+  position: relative;
+}
+.container .info{
+  margin-left: 0;
+}
+
+.options{
+  justify-content: center;
+}
+ .faces{
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+form{
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+button{
+  margin-left: 35%;
+}
+
+#round-text{
+  display: none;
+}
+}
