@@ -1,77 +1,73 @@
 let dragged
 
-      /* events fired on the draggable target */
-      const source = document.getElementById('draggable')
-      source.addEventListener('drag', event => {
-        console.log('dragging')
-      })
+/* events fired on the draggable target */
+const source = document.getElementById('draggable')
+source.addEventListener('drag', event => {
+  console.log('dragging')
+})
 
-      source.addEventListener('dragstart', event => {
-        // store a ref. on the dragged elem
-        dragged = event.target
-        // make it half transparent
-        event.target.classList.add('dragging')
-      })
+source.addEventListener('dragstart', event => {
+  // store a ref. on the dragged elem
+  dragged = event.target
+  // make it half transparent
+  event.target.classList.add('dragging')
+})
 
-      source.addEventListener('dragend', event => {
-        // reset the transparency
-        event.target.classList.remove('dragging')
-      })
+source.addEventListener('dragend', event => {
+  // reset the transparency
+  event.target.classList.remove('dragging')
+})
 
-      /* events fired on the drop targets */
-      const target = document.getElementById('droptarget')
-      target.addEventListener(
-        'dragover',
-        event => {
-          // prevent default to allow drop
-          event.preventDefault()
-          //add styles here
-        },
-        false
-      )
+/* events fired on the drop targets */
+const target = document.getElementById('droptarget')
+target.addEventListener(
+  'dragover',
+  event => {
+    // prevent default to allow drop
+    event.preventDefault()
+    //add styles here
+  },
+  false
+)
 
-      target.addEventListener('dragenter', event => {
-        // highlight potential drop target when the draggable element enters it
-        if (event.target.classList.contains('dropzone')) {
-          event.target.classList.add('dragover')
-        }
-      })
+target.addEventListener('dragenter', event => {
+  // highlight potential drop target when the draggable element enters it
+  if (event.target.classList.contains('dropzone')) {
+    event.target.classList.add('dragover')
+  }
+})
 
-      target.addEventListener('dragleave', event => {
-        // reset background of potential drop target when the draggable element leaves it
-        if (event.target.classList.contains('dropzone')) {
-          event.target.classList.remove('dragover')
-        }
-      })
+target.addEventListener('dragleave', event => {
+  // reset background of potential drop target when the draggable element leaves it
+  if (event.target.classList.contains('dropzone')) {
+    event.target.classList.remove('dragover')
+  }
+})
 
-      target.addEventListener('drop', event => {
-        let url = '#p4'
-        // prevent default action (open as link for some elements)
-        event.preventDefault()
-        // move dragged element to the selected drop target
-        if (event.target.classList.contains('dropzone')) {
-          event.target.classList.remove('dragover')
-  
-          //alert('dropped')
-          window.location = url
-        }
-      })
+target.addEventListener('drop', event => {
+  let url = '#p4'
+  // prevent default action (open as link for some elements)
+  event.preventDefault()
+  // move dragged element to the selected drop target
+  if (event.target.classList.contains('dropzone')) {
+    event.target.classList.remove('dragover')
 
+    //alert('dropped')
+    window.location = url
+  }
+})
 
-      $(document).ready(function () {
-        $('.gallery').slick({
-          dots: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          adaptiveHeight: true,
-          autoplay: true,
-          autoplaySpeed: 2000
-        })
-      })
-
-
-
-      ;('use strict')
+$(document).ready(function () {
+  $('.gallery').slick({
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 2000
+  })
+})
+;('use strict')
 
 function toggleIcon() {
   $('.icon').on('click', function () {
@@ -90,37 +86,49 @@ function closeMobileMenu() {
 $(toggleIcon)
 $(closeMobileMenu)
 
+function populateStorage() {
+  localStorage.setItem('bgcolor', 'red')
+  localStorage.setItem('font', 'Helvetica')
+  localStorage.setItem('image', 'myCat.png')
+}
 
 $('#s-purple').click(function () {
-    $('#r-yellow').addClass('hide')
-    $('#r-blue').addClass('hide')
-    $('#r-green').addClass('hide')
-    $('#r-purple').removeClass('hide')
-  })
+  $('#r-yellow').addClass('hide')
+  $('#r-blue').addClass('hide')
+  $('#r-green').addClass('hide')
+  $('#r-purple').removeClass('hide')
+  // change the href of your save button link
+  $('.button').attr('href', 'images/purple.png')
+})
 
-  $('#s-yellow').click(function () {
-    $('#r-purple').addClass('hide')
-    $('#r-blue').addClass('hide')
-    $('#r-green').addClass('hide')
-    $('#r-yellow').removeClass('hide')
-  })
+$('#s-yellow').click(function () {
+  $('#r-purple').addClass('hide')
+  $('#r-blue').addClass('hide')
+  $('#r-green').addClass('hide')
+  $('#r-yellow').removeClass('hide')
+  // change the href of your save button link
+  $('.button').attr('href', 'images/yellow.png')
+})
 
-  $('#s-blue').click(function () {
-    $('#r-yellow').addClass('hide')
-    $('#r-purple').addClass('hide')
-    $('#r-green').addClass('hide')
-    $('#r-blue').removeClass('hide')
-  })
+$('#s-blue').click(function () {
+  $('#r-yellow').addClass('hide')
+  $('#r-purple').addClass('hide')
+  $('#r-green').addClass('hide')
+  $('#r-blue').removeClass('hide')
+  // change the href of your save button link
+  $('.button').attr('href', 'images/blue.png')
+})
 
-  $('#s-green').click(function () {
-    $('#r-yellow').addClass('hide')
-    $('#r-blue').addClass('hide')
-    $('#r-purple').addClass('hide')
-    $('#r-green').removeClass('hide')
-  })
+$('#s-green').click(function () {
+  $('#r-yellow').addClass('hide')
+  $('#r-blue').addClass('hide')
+  $('#r-purple').addClass('hide')
+  $('#r-green').removeClass('hide')
+  // change the href of your save button link
+  $('.button').attr('href', 'images/green.png')
+})
 
-
-  let timer = 0
+let timer = 0
 window.addEventListener('load', event => {
   let intersectionObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -142,7 +150,6 @@ window.addEventListener('load', event => {
   })
 })
 
-
 $('.name').click(function () {
   $('form').toggleClass('hide')
   $('.faces').toggleClass('hide')
@@ -152,7 +159,5 @@ $('.face').click(function () {
   $('form').toggleClass('hide')
 })
 
-
-new CircleType(document.getElementById('round-text'));
-$(round-text.element).fitText();
-
+new CircleType(document.getElementById('round-text'))
+$(round - text.element).fitText()
